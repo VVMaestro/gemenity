@@ -1,0 +1,29 @@
+.button {
+    display: inline-block;
+
+    box-sizing: border-box;
+    padding: 3px 10px;
+    min-width: 100px;
+    min-height: 30px;
+
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+
+    background-color: @main-color;
+    border-radius: 5px;
+    border: 2px solid @second-color;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    &:hover,
+    &focus {
+        background-color: fade(@main-color, 50%);
+    }
+
+    &--block {
+        display: block;
+    }
+}

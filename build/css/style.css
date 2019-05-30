@@ -1,12 +1,31 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 960px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #2F8D91;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 960px;
 }
 .page-header {
-  width: 100%;
+  padding: 5px;
   min-height: 60px;
   background-color: #13ca93;
+}
+.page-header__site-title {
+  margin-left: 50px;
+  width: 200px;
+}
+.input {
+  display: block;
+  width: 160px;
+  min-height: 20px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 2px solid #2F8D91;
 }
 .auth {
   display: -webkit-box;
@@ -21,26 +40,100 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 90vh;
+  height: 80vh;
 }
 .auth__form {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
   width: 300px;
+  background-color: #eff8da;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   border: 2px solid #5eb11a;
-  -webkit-box-shadow: 0 0 10px 5px lightgray;
-          box-shadow: 0 0 10px 5px lightgray;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.514);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.514);
+}
+.auth__label {
+  display: block;
+  margin: 0 auto 5px auto;
+  width: 160px;
 }
 .auth__input {
-  display: block;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 .auth__button {
+  margin: 10px auto 0 auto;
+}
+.button {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3px 10px;
+  min-width: 100px;
+  min-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  background-color: #13ca93;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 2px solid #2F8D91;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.button:hover,
+.buttonfocus {
+  background-color: rgba(19, 202, 147, 0.5);
+}
+.button--block {
   display: block;
-  margin: 0 auto;
+}
+.gem__list {
+  height: 300px;
+  overflow-y: scroll;
+}
+.gem__item {
+  margin-bottom: 15px;
+}
+.gem__text {
+  color: #475c0d;
+  font-size: 18px;
+  font-style: italic;
+}
+.profile {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #eff8da;
+}
+.profile__colums {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.profile__col {
+  width: 49%;
+}
+.profile__field {
+  margin: 10px;
+  border: 2px solid #5eb11a;
+}
+.profile__list {
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+}
+.profile__title {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+.profile__item {
+  margin-bottom: 10px;
 }
