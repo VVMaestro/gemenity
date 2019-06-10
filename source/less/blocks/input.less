@@ -6,4 +6,11 @@
 
     border-radius: 5px;
     border: 2px solid @second-color;
+
+    &--readonly {
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+        -moz-appearance: textfield;
+    }
 }

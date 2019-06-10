@@ -1,0 +1,39 @@
+.add-gems__colums {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-gems__list {
+    padding: 0;
+    max-height: 500px;
+
+    list-style: none;
+
+    overflow-y: scroll;
+}
+
+.add-gems__item {
+    display: flex;
+
+    justify-content: space-between;
+
+    width: 400px;
+
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.add-gems__name {
+    font-size: 22px;
+    color: @gem-color;
+}
+
+.add-gems__input {
+    width: 80px;
+    height: 50px;
+
+    font-size: 28px;
+}

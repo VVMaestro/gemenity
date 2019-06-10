@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Страница добавления драгоценностей</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <h1 class="page-header__site-title">gemenity</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="page__section">
+                <h2 class="page__title">Добавить драгоценности</h2>
+                <div class="add-gems__colums">
+                    <ul class="add-gems__list">
+                        <form action="" method="POST" id="add-gems">
+                            <li class="add-gems__item">
+                                <span class="add-gems__name">Хризолит</span>
+                                <input type="number" name="hrizolit" class="input add-gems__input" value="0" min="0">
+                            </li>
+                            <li class="add-gems__item">
+                                <span class="add-gems__name">Бриллиант</span>
+                                <input type="number" name="brilliant" class="input add-gems__input" value="0" min="0">
+                            </li>
+                            <li class="add-gems__item">
+                                <span class="add-gems__name">Опал</span>
+                                <input type="number" name="opal" class="input add-gems__input" value="0" min="0">
+                            </li>
+                        </form>
+                    </ul>
+                    <input type="submit" class="button button--big" form="add-gems" value="Добавить камни">
+                </div>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Страница пользователей</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <h1 class="page-header__site-title">gemenity</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="page__section">
+                <h2 class="page__title">Пользователи</h2>
+                <div class="users__filter filter">
+                    <h3 class="filter__title">Отфильтровать по: </h3>
+                    <ul class="filter__list">
+                        <li class="filter__item">
+                            <a href="#">Статусу</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#">Имени</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="users__colums">
+                    <div class="users__wrapper">
+                        <h3 class="page__title">Эльфы:</h3>
+                        <ul class="users__list">
+                            <li class="users__item users__item--elf">
+                                <a href="#" class="users__link">
+                                    <span class="users__name">Леголас</span>
+                                    <div class="users__data">
+                                        <span class="users__gems">Получено: </span>
+                                        <span class="users__gems">Любимые: </span>
+                                        <ul class="users__like-list">
+                                            <li class="users__like-item">Хризолит</li>
+                                            <li class="users__like-item">Алмаз</li>
+                                            <li class="users__like-item">Корунд</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                                <a href="#" class="users__delete">Удалить</a>
+                            </li>
+                            <li class="users__item users__item--elf">
+                                <a href="#" class="users__link">
+                                    <span class="users__name">Леголас</span>
+                                    <div class="users__data">
+                                        <span class="users__gems">Получено: </span>
+                                        <span class="users__gems">Любимые: </span>
+                                        <ul class="users__like-list">
+                                            <li class="users__like-item">Хризолит</li>
+                                            <li class="users__like-item">Алмаз</li>
+                                            <li class="users__like-item">Корунд</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                                <a href="#" class="users__delete">Удалить</a>
+                            </li>
+                            <li class="users__item users__item--elf">
+                                <a href="#" class="users__link">
+                                    <span class="users__name">Леголас</span>
+                                    <div class="users__data">
+                                        <span class="users__gems">Получено: </span>
+                                        <span class="users__gems">Любимые: </span>
+                                        <ul class="users__like-list">
+                                            <li class="users__like-item">Хризолит</li>
+                                            <li class="users__like-item">Алмаз</li>
+                                            <li class="users__like-item">Корунд</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                                <a href="#" class="users__delete">Удалить</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="users__wrapper">
+                        <h3 class="page__title">Гномы:</h3>
+                            <ul class="users__list">
+                                <li class="users__item users__item--dwarf">
+                                    <a href="#" class="users__link">
+                                        <span class="users__name">Гимли</span>
+                                        <div class="users__data">
+                                            <span class="users__gems">Добыто: </span>
+                                        </div>
+                                    </a>
+                                    <span class="users__master-icon">М</span>
+                                    <a href="#" class="users__delete">Удалить</a>
+                                </li>
+                                <li class="users__item users__item--dwarf">
+                                    <a href="#" class="users__link">
+                                        <span class="users__name">Гимли</span>
+                                        <div class="users__data">
+                                            <span class="users__gems">Добыто: </span>
+                                        </div>
+                                    </a>
+                                    <span class="users__master-icon">М</span>
+                                    <a href="#" class="users__delete">Удалить</a>
+                                </li>
+                                <li class="users__item users__item--dwarf">
+                                    <a href="#" class="users__link">
+                                        <span class="users__name">Гимли</span>
+                                        <div class="users__data">
+                                            <span class="users__gems">Добыто: </span>
+                                        </div>
+                                    </a>
+                                    <span class="users__master-icon">М</span>
+                                    <a href="#" class="users__delete">Удалить</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="users__wrapper">
+                            <h3 class="page__title">Создать пользователя:</h3>
+                            <form action="" method="post">
+                                <label for="new-name" class="users__label">
+                                    Имя нового пользователя: 
+                                </label>
+                                <input class="input users__input" id="new-name" type="text" placeholder="Имя">
+                                <label for="new-login" class="users__label"> 
+                                    Логин нового пользователя:
+                                </label>
+                                <input class="input users__input" id="new-login" type="text" placeholder="Логин">
+                                <label for="new-pass" class="users__label">
+                                    Пароль нового пользователя:
+                                </label>
+                                <input class="input users__input" id="new-pass" type="password" placeholder="Пароль">
+                                <input type="submit" class="button" value="Создать">
+                                <input type="reset" class="button" value="Отмена">
+                            </form>
+                        </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>

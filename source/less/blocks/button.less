@@ -7,7 +7,9 @@
     min-height: 30px;
 
     text-align: center;
+    vertical-align: middle;
     text-decoration: none;
+    text-transform: uppercase;
     color: #000;
 
     background-color: @main-color;
@@ -19,11 +21,16 @@
     transition: all 0.2s ease;
 
     &:hover,
-    &focus {
+    &:focus {
         background-color: fade(@main-color, 50%);
     }
 
     &--block {
         display: block;
+    }
+
+    &--big {
+        padding: 10px 20px;
+        font-size: 36px;
     }
 }

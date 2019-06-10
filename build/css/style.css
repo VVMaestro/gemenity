@@ -10,6 +10,15 @@ body {
   padding: 0 20px;
   max-width: 960px;
 }
+.page__section {
+  padding: 20px 30px;
+  background-color: #eff8da;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+.page__title {
+  color: #475c0d;
+}
 .page-header {
   padding: 5px;
   min-height: 60px;
@@ -26,6 +35,12 @@ body {
   -webkit-border-radius: 5px;
           border-radius: 5px;
   border: 2px solid #2F8D91;
+}
+.input--readonly {
+  -moz-appearance: textfield;
+}
+.input--readonly::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 .auth {
   display: -webkit-box;
@@ -73,7 +88,9 @@ body {
   min-width: 100px;
   min-height: 30px;
   text-align: center;
+  vertical-align: middle;
   text-decoration: none;
+  text-transform: uppercase;
   color: #000;
   background-color: #13ca93;
   -webkit-border-radius: 5px;
@@ -85,11 +102,15 @@ body {
   transition: all 0.2s ease;
 }
 .button:hover,
-.buttonfocus {
+.button:focus {
   background-color: rgba(19, 202, 147, 0.5);
 }
 .button--block {
   display: block;
+}
+.button--big {
+  padding: 10px 20px;
+  font-size: 36px;
 }
 .gem__list {
   height: 300px;
@@ -97,6 +118,14 @@ body {
 }
 .gem__item {
   margin-bottom: 15px;
+  text-align: center;
+}
+.gem__input {
+  margin: 0 auto;
+  height: 40px;
+  width: 80px;
+  font-size: 24px;
+  text-align: center;
 }
 .gem__text {
   color: #475c0d;
@@ -117,6 +146,19 @@ body {
       -ms-flex-pack: distribute;
           justify-content: space-around;
 }
+.profile__inner-colums {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 .profile__col {
   width: 49%;
 }
@@ -133,7 +175,219 @@ body {
   margin: 5px 0;
   font-size: 20px;
   font-weight: 400;
+  text-align: center;
 }
 .profile__item {
   margin-bottom: 10px;
+}
+.profile__input {
+  margin: 0 auto 20px auto;
+}
+.profile__button {
+  display: block;
+  margin: 0 auto;
+}
+.filter {
+  padding: 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 4px solid #2F8D91;
+  background-color: #5eb11a;
+}
+.filter__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  list-style: none;
+}
+.filter__item {
+  padding: 0 10px;
+}
+.filter__item a {
+  color: #000;
+  text-decoration: none;
+  -webkit-text-decoration-color: #475c0d;
+          text-decoration-color: #475c0d;
+}
+.filter__item a:hover,
+.filter__item a:focus {
+  text-decoration: underline;
+}
+.filter__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.filter__input {
+  margin-right: 10px;
+}
+.users__colums {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.users__list {
+  margin: 0;
+  padding: 0;
+  max-height: 700px;
+  overflow-y: auto;
+  list-style: none;
+}
+.users__like-list {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 70px;
+  list-style: none;
+  text-align: start;
+}
+.users__item {
+  position: relative;
+  width: 250px;
+}
+.users__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.users__item--elf .users__link {
+  border: 2px solid #475c0d;
+}
+.users__item--dwarf .users__link {
+  border: 2px solid #5eb11a;
+}
+.users__link {
+  display: block;
+  position: relative;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #13ca93;
+}
+.users__link:hover,
+.users__link:focus {
+  border-color: #fa8e00;
+}
+.users__gems {
+  display: block;
+  margin-bottom: 10px;
+}
+.users__delete {
+  color: #fa8e00;
+  text-decoration: none;
+}
+.users__delete:hover,
+.users__delete:focus {
+  text-decoration: underline;
+}
+.users__label {
+  display: block;
+  margin-bottom: 10px;
+}
+.users__input {
+  margin-bottom: 15px;
+}
+.users__name {
+  font-weight: 700;
+}
+.users__data {
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.users__master-icon {
+  display: block;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+.add-gems__colums {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.add-gems__list {
+  padding: 0;
+  max-height: 500px;
+  list-style: none;
+  overflow-y: scroll;
+}
+.add-gems__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 400px;
+}
+.add-gems__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.add-gems__name {
+  font-size: 22px;
+  color: #475c0d;
+}
+.add-gems__input {
+  width: 80px;
+  height: 50px;
+  font-size: 28px;
+}
+.gem-info__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 20px 0 -20px 0;
+  padding: 0;
+  list-style: none;
+}
+.gem-info__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 15px 10px;
+  width: calc(33.33%);
+  color: #d1eeca;
+  border: 2px solid #13ca93;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #475c0d;
+}
+.gem-info__info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

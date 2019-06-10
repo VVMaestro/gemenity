@@ -1,0 +1,99 @@
+.users__colums {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.users__list {
+    margin: 0;
+    padding: 0;
+    max-height: 700px;
+
+    overflow-y: auto;
+
+    list-style: none;
+}
+
+.users__like-list {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 70px;
+    
+    list-style: none;
+    text-align: start;
+}
+
+.users__item {
+    position: relative;
+    width: 250px;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &--elf .users__link {
+        border: 2px solid @gem-color;
+    }
+
+    &--dwarf .users__link {
+        border: 2px solid @second-green;
+    }
+}
+
+.users__link {
+    display: block;
+    position: relative;
+
+    padding: 5px 10px;
+
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+
+    border-radius: 5px;
+    background-color: @main-color;
+
+    &:hover, &:focus {
+        border-color: @differ-color;
+    }
+}
+
+.users__gems {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.users__delete {
+    color: @differ-color;
+    text-decoration: none;
+
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+}
+
+.users__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.users__input {
+    margin-bottom: 15px;
+}
+
+.users__name {
+    font-weight: 700;
+}
+
+.users__data {
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.users__master-icon {
+    display: block;
+    position: absolute;
+
+    right: 2px;
+    top: 2px;
+}
